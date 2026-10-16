@@ -20,7 +20,7 @@ export function HeaderNavItem({
           </Badge>
         ) : null}
       </span>
-      <span>{label}</span>
+      <span className="hidden md:block">{label}</span>
     </Link>
   );
 }

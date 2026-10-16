@@ -12,16 +12,16 @@ import { Navbar } from "../navbar/Navbar.ctrl";
 export function Header() {
   return (
     <header>
-      <div className="flex items-center justify-between px-5 py-2">
+      <div className="flex flex-wrap items-center justify-between px-5 py-2 gap-4">
         <Link to={"/"}><img src={LogoImg} alt="Hareena" className="w-50" /></Link>
-        <GlobalSearch />
-        <div className="flex h-5 items-center gap-4 text-sm">
+        <div className="flex lg:order-2 h-5 items-center gap-4 text-sm">
           <HeaderNavItem to="/" label="Wishlist" icon={Heart} badge={0} />
           <Separator orientation="vertical" />
           <HeaderNavItem to="/" label="My Cart" icon={ShoppingCartPlus} badge={0} />
           <Separator orientation="vertical" />
           <AvatarDropdown/>
         </div>
+        <GlobalSearch />
       </div>
        <Navbar/>
     </header>

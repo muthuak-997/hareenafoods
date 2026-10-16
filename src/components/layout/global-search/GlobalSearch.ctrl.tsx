@@ -7,7 +7,7 @@ import { Button } from "@/components/ui/button";
 
 export function GlobalSearch() {
   return (
-    <InputGroup className="max-w-xs">
+    <InputGroup className="w-full lg:w-xs  lg:order-1">
       <InputGroupInput placeholder="Search Products..." />
       <InputGroupAddon align="inline-end">
         <Button size="xs" >Search</Button>

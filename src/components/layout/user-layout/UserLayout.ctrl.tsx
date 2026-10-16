@@ -4,10 +4,10 @@ import { Header } from "../header/Header.ctrl";
 
 export function UserLayout() {
   return (
-    <>
+    <div className="flex min-h-screen flex-col">
         <Header/>
-        <Outlet/>
+        <main className="flex-1"><Outlet/></main>
         <Footer/>
-    </>
+    </div>
   )
 }
